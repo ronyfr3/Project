@@ -1,0 +1,11 @@
+.header-icons ul{
+    @include flex(row,center,space-between);
+    li{
+        @include flex(row,center,space-between);
+        font-size: 1.09rem;
+        background-color: $c1;
+        border-radius: 50%;
+        padding: 0.7rem;
+        margin: 0 0.4rem;
+    }
+}

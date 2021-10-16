@@ -1,9 +1,10 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
+// GET ALL PLAYERS
 const getPlayers = createAsyncThunk(
   "players/getPlayers",
   async () => {
-    return fetch("https://free-nba.p.rapidapi.com/players?per_page=50&page=0", {
+    return fetch("https://free-nba.p.rapidapi.com/players?per_page=100&page=0", {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "free-nba.p.rapidapi.com",
@@ -16,4 +17,4 @@ const getPlayers = createAsyncThunk(
     });
   }
 );
-export default getPlayers;
+export default getPlayers

@@ -1,22 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
-import getPlayers from "../api/Api";
+import getPlayers from "../api/PlayersApi";
 
 const playerSlice = createSlice({
   name: "players",
   initialState: {
-    data: [],
-    status: null,
+    players: [],
+    loading: null,
   },
   extraReducers: {
     [getPlayers.pending]: (state) => {
-      state.status = "loading";
+      state.loading = "loading";
     },
     [getPlayers.fulfilled]: (state, action) => {
-      state.data = action.payload;
-      state.status = "success";
+      state.players = action.payload;
+      state.loading = "success";
     },
     [getPlayers.rejected]: (state) => {
-      state.status = "failed";
+      state.loading = "failed";
     },
   },
 });

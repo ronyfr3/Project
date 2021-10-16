@@ -1,0 +1,9 @@
+.home-wrapper{
+    @include flex(row,flex-start,flex-start);
+    .home-content-1{
+        flex: .25
+    }
+    .home-content-2{
+        flex: auto;
+    }
+}

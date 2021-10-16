@@ -1,0 +1,21 @@
+.filterSection{
+    @include flex(row,center,space-between);
+    margin: 0  0 2rem 0;
+    button{
+        @include flex(row,center,space-between);
+        background-color: white;
+        width: 85px;
+        outline: none;
+        border: 1px solid $c4;
+        padding: 7px 10px;
+        border-radius: 5px;
+        margin-right: 2rem;
+        cursor: pointer;
+        p{
+            font-size: 0.9rem;
+        }
+        .filter-icon{
+            font-size: 1rem;
+        }
+    }
+}

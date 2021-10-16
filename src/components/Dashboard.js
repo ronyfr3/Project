@@ -1,12 +1,13 @@
 import React from 'react'
-import { useSelector } from "react-redux";
+import Cards from './cards/Cards';
+import FilterSection from './cards/FilterSection';
 
 const Dashboard = () => {
-    const { data, status } = useSelector(state => state.players)
 
     return (
-        <div>
-            <p>hello</p>
+        <div className="dashboard-wrapper">
+            <FilterSection/>
+            <Cards/>
         </div>
     )
 }
