@@ -1,6 +1,7 @@
 import React from 'react'
 import Cards from './cards/Cards';
 import FilterSection from './cards/FilterSection';
+import Overview from './Overview/Overview';
 
 const Dashboard = () => {
 
@@ -8,6 +9,7 @@ const Dashboard = () => {
         <div className="dashboard-wrapper">
             <FilterSection/>
             <Cards/>
+            <Overview/>
         </div>
     )
 }

@@ -4,18 +4,16 @@ import {GiGoalKeeper} from "react-icons/gi";
 import {AiOutlineEllipsis} from "react-icons/ai";
 
 const GameCard = () => {
-    const { games, loading_status} = useSelector(state => state.games)
-    console.log('g',games);
+    const { games } = useSelector(state => state.games)
 
     const highestGoal = Math.max.apply(null,games?.data?.map((x)=>x.visitor_team_score))
     const visitorTeam = games?.data?.find((x)=>x.visitor_team_score===highestGoal)?.visitor_team?.full_name
     const homeTeam = games?.data?.find((x)=>x.visitor_team_score===highestGoal)?.home_team?.full_name
-    console.log(homeTeam);
-    if(loading_status==="loading") return "loading"
+
     return (
         <div className="game-card">
             <div className="gameCard-icons">
-                <GiGoalKeeper className="ball-icon"/>
+                <GiGoalKeeper className="game-icon"/>
                 <AiOutlineEllipsis className="dot-icons"/>
             </div>
             <div className="gameCard-info">

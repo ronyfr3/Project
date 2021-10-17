@@ -1,0 +1,36 @@
+.recent-activity{
+    margin-top: 2rem;
+    width: 100%;
+    .arrow_right{
+        padding: 0.7rem;
+        background-color: rgb(255, 231, 242);
+        border-radius: 50%;
+    }
+    .arrow_left{
+        padding: 0.7rem;
+        background-color: rgb(231, 255, 231);
+        border-radius: 50%;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 1rem;
+      }
+      table tr td{
+        color: $c2;
+        text-align: center;
+      }
+      table td, table th {
+        padding: 0.5rem;
+      }
+      table tr:hover th {
+        background-color: black;
+        color: $c4;
+      }
+      table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        color: $c4;
+      }
+}

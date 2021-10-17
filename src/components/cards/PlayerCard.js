@@ -4,8 +4,7 @@ import {AiOutlineEllipsis} from "react-icons/ai"
 import {BiFootball} from "react-icons/bi"
 
 const PlayerCard = () => {
-    const { players, loading } = useSelector(state => state.players)
-    console.log('p',players);
+    const { players } = useSelector(state => state.players)
 
      //Filtering Unique Teams
      function onlyUnique(value, index, self) {
@@ -13,7 +12,7 @@ const PlayerCard = () => {
       }
     const teams = players?.data?.map((x)=>x.team.full_name).filter(onlyUnique).length;
     const totalPlayers = players?.data?.map((x)=>x).length;
-    if(loading==="loading") return "loading"
+    
     return (
         <div className="player-card">
             <div className="playerCard-icons">

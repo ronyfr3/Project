@@ -1,12 +1,12 @@
-.game-card{
-    background-color: rgb(214, 235, 255);
+.stat-card{
+    background-color: $c7;
     width: 290px;
     border-radius: 15px;
     padding: 1.3rem;
     margin-left: 2.5rem;
-    .gameCard-icons{
+    .statCard-icons{
         @include flex(row,center,space-between);
-        .game-icon{
+        .stat-icon{
             font-size: 2.4rem;
         }
         .dot-icons{
@@ -14,15 +14,15 @@
             cursor: pointer;
         }
     }
-    .gameCard-info{
+    .statCard-info{
         margin-top: 1.5rem;
         h3{
             font-size: 1.4rem;
             text-transform: capitalize;
         }
         small{
-            text-transform: capitalize;
             font-size: 0.9rem;
+            text-transform: capitalize;
             color: $c5;
         }
     }

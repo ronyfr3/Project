@@ -1,6 +1,6 @@
 .player-card{
     background-color: rgb(214, 255, 214);
-    width: 230px;
+    width: 290px;
     border-radius: 15px;
     padding: 1.3rem;
     .playerCard-icons{
@@ -14,11 +14,13 @@
         }
     }
     .playerCard-info{
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         h3{
             font-size: 1.4rem;
+            text-transform: capitalize;
         }
         small{
+            text-transform: capitalize;
             font-size: 0.9rem;
             color: $c5;
         }

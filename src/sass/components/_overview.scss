@@ -1,0 +1,12 @@
+.overview-wrapper{
+    @include flex(row,flex-start,flex-start);
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    .filter-section{
+        flex: 1.5;
+        margin-right: 1rem;
+    }
+    .table-section{
+        flex: 1;
+    }
+}

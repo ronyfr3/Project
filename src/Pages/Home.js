@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch } from "react-redux";
 import getPlayers from "../api/PlayersApi"
 import getGames from "../api/GamesApi"
+import getStats from "../api/StatsApi"
 import Dashboard from '../components/Dashboard';
 import SideBar from '../components/SideBar';
 
@@ -11,6 +12,7 @@ const dispatch = useDispatch()
   React.useEffect(() => {
     dispatch(getPlayers());
     dispatch(getGames());
+    dispatch(getStats());
   }, [dispatch]);
 
     return (

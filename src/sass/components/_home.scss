@@ -1,9 +1,10 @@
 .home-wrapper{
     @include flex(row,flex-start,flex-start);
     .home-content-1{
-        flex: .25
+        flex: 1
     }
     .home-content-2{
-        flex: auto;
+        flex: 2;
+        margin-right: 1rem;
     }
 }
