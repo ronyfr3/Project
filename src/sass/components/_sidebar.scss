@@ -6,12 +6,50 @@
     top: 0;
     left: 0;
     width: 220px;
+    @include media(PL){
+        @include flex(column,center,space-evenly);
+        width: 100%;
+        height: 100px;
+        position: initial;
+    }
+    @include media(P){
+        @include flex(column,center,space-evenly);
+        width: 100%;
+        height: 100px;
+        position: initial;
+    }
+    @include media(MM){
+        @include flex(column,center,space-evenly);
+        width: 100%;
+        height: 100px;
+        position: initial;
+    }
+    ul{
+    @include media(PL){
+        @include flex(row,center,center); 
+        }
+    @include media(P){
+        @include flex(row,center,center); 
+        }
+    @include media(MM){
+        @include flex(row,center,center); 
+        }
+    }
     ul li{
        @include flex(row,center,flex-start); 
        margin: 1.5em 0;
        font-size: 1em;
        color: gray;
        cursor: pointer;
+       @include media(PL){
+         padding: 0 0.8rem;
+       }
+       @include media(P){
+         padding: 0 0.7rem;
+       }
+       @include media(MM){
+         padding: 0 0.6rem;
+       }
        &:hover{
            color: $c6;
        }
@@ -19,6 +57,15 @@
            padding-right: 0.7rem;
            font-size: 22px;
            color: $c6;
+           @include media(PL){
+               display: none;
+           }
+           @include media(P){
+               display: none;
+           }
+           @include media(MM){
+               display: none;
+           }
        }
     }
     .history-card{
@@ -26,6 +73,15 @@
         width: 130px;
         border-radius: 15px;
         padding: 1rem;
+        @include media(MM){
+            display: none
+        }
+        @include media(PL){
+            display: none
+        }
+        @include media(P){
+            display: none
+        }
         .history-icons{
             @include flex(row,center,space-between);
             .clock-icon{

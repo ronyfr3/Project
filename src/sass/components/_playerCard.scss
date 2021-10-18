@@ -3,6 +3,17 @@
     width: 290px;
     border-radius: 15px;
     padding: 1.3rem;
+
+    @include media(PL){
+        margin-bottom: 1rem
+    }
+    @include media(P){
+        margin-bottom: 1rem;
+    }
+    @include media(MM){
+        margin-bottom: 1rem;
+        width: 270px;
+    }
     .playerCard-icons{
         @include flex(row,center,space-between);
         .ball-icon{

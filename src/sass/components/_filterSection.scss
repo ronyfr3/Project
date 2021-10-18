@@ -1,8 +1,19 @@
 .filterSection{
     @include flex(row,center,space-between);
     margin: 0  0 2rem 0;
+    width: 100%;
+
+    @include media(PL){
+        @include flex(row,center,space-around);
+    }
+    @include media(P){
+        @include flex(row,center,space-around);
+    }
+    @include media(MM){
+        @include flex(row,center,space-around);
+    }
     button{
-        @include flex(row,center,space-between);
+        @include flex(row,center,space-around);
         background-color: white;
         width: 85px;
         outline: none;

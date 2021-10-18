@@ -2,6 +2,18 @@
     @include flex(row,center,space-between);
     margin-right: 1rem;
     position: relative;
+    @include media(P){
+        @include flex(row,center,center);
+        margin-right: 0.5rem;
+     }
+    @include media(PL){
+        @include flex(row,center,center);
+        margin-right: 0.3rem;
+     }
+    @include media(MM){
+        @include flex(row,center,center);
+        margin-right: 0.2rem;
+     }
      input{
          position: relative;
          padding: 0.7rem;
@@ -10,6 +22,15 @@
          border:none;
          outline: none;
          width: 200px;
+         @include media(P){
+            width: 150px; 
+         }
+         @include media(PL){
+            width: 150px; 
+         }
+         @include media(MM){
+            width: 140px; 
+         }
     }
     input[type='text']::placeholder{
         font-size: 1rem;
@@ -20,5 +41,14 @@
          font-size: 1.5rem;
          margin-left: 1rem;
          color: $c2;
+         @include media(P){
+            font-size: 1.2rem; 
+         }
+         @include media(PL){
+            font-size: 1.2rem; 
+         }
+         @include media(MM){
+            font-size: 1.2rem; 
+         }
      }
   }

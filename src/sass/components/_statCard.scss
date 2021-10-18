@@ -4,6 +4,19 @@
     border-radius: 15px;
     padding: 1.3rem;
     margin-left: 2.5rem;
+
+    @include media(P){
+        margin-left:0; 
+        margin-bottom: 1rem; 
+    }
+    @include media(PL){
+        margin-left:0; 
+        margin-bottom: 1rem;  
+    }
+    @include media(MM){
+        margin-left:0;
+        margin-bottom: 1rem;   
+    }
     .statCard-icons{
         @include flex(row,center,space-between);
         .stat-icon{

@@ -13,8 +13,6 @@ const Charts=()=>{
     })
   }
 
-  console.log(options);
-
   return(
     <div className="charts-wrapper">
       <ResponsiveContainer aspect={1} className="chart-container">

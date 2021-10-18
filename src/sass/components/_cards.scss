@@ -1,3 +1,12 @@
 .cards-wrapper{
-    @include flex(row,center,flex-start)
+    @include flex(row,center,flex-start);
+    @include media(PL){
+        @include flex(column,center,center);
+    }
+    @include media(P){
+        @include flex(column,center,center)
+    }
+    @include media(MM){
+        @include flex(column,center,center)
+    }
 }

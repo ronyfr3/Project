@@ -2,11 +2,42 @@
     @include flex(row,flex-start,flex-start);
     margin-top: 2rem;
     margin-bottom: 2.5rem;
+
+    @include media(P){
+        @include flex(column,center,center);  
+    }
+    @include media(PL){
+        @include flex(column,center,center);  
+    }
+    @include media(MM){
+        @include flex(column,center,center);  
+    }
     .filter-section{
         flex: 1.5;
         margin-right: 1rem;
+        @include media(P){
+            margin-right: 0;
+            flex:0; 
+        }
+        @include media(PL){
+            margin-right: 0;
+            flex:0; 
+        }
+        @include media(MM){
+            margin-right: 0;
+            flex:0; 
+        }
     }
     .table-section{
         flex: 1;
+        @include media(P){
+            flex:0; 
+        }
+        @include media(PL){
+            flex:0; 
+        }
+        @include media(MM){
+            flex:0; 
+        }
     }
 }
